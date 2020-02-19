@@ -1,0 +1,65 @@
+/*Take away the image on left nav bar*/
+/*Note: You have to add <style> brackets for sharepoint*/
+
+
+/*Removing space between top nav box*/
+#contentRow {
+    padding-top: 5px;
+}
+
+/*Styling the left nav box*/
+#sideNavBox {
+    margin-left: 3px;
+    min-height: 880px;
+    max-height: 2000px;
+    /*background-color: #36454f;*/
+    border-radius: 6px 6px 6px 6px;
+}
+
+
+/*Table within the nav box*/
+#zz16_RootAspMenu {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+ /*affecting just the list items*/
+ #zz16_RootAspMenu li.static {
+    display: inline-flex;
+    width: 80%;
+    border-bottom: solid;
+    border-bottom-color: black;
+    border-width: 1px;
+    padding-top: 5px;
+}   
+   
+/*Targeting the list items(This is where you target the font)*/
+.ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenu-item, .ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenuEdit, .ms-core-listMenu-heading, .ms-tv-header {
+    font-family: Rockwell;
+    color: #000;
+    text-transform: uppercase;
+    border: none !important;
+    font-size: 20px;
+}
+
+/*Targeting the Home Link in the table*/
+.ms-core-listMenu-selected:link, .ms-core-listMenu-selected:visited, .ms-core-listMenu-selected {
+    background-color: #fff;
+    background-color: #fff;
+}
+
+/*Padding for table content in sidebox*/
+.ms-core-listMenu-verticalBox > .ms-core-listMenu-item, .ms-core-listMenu-verticalBox li.static > .ms-core-listMenu-item {
+    padding: 10px 0px 0px 0px;
+}
+
+.ms-core-sideNavBox-removeLeftMargin {
+    display: inline;
+}
+
+.ms-siteicon-img {
+    max-height: 95px;
+}
